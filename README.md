@@ -13,12 +13,16 @@ DWG7(UN Open GIS Initiative)の組織トップページ。`docs/index.md`がGitH
 ## 運用
 
 - **公開ページの言語は英語**(国際的な読み手を想定)。このREADME/CLAUDE.mdは内部向けなので日本語。
-- `docs/index.md`は、dwg7配下でGitHub Pagesが有効な各リポジトリ(`has_pages: true`)のうち、
-  対外的な訴求力があるものを選んで一覧化したもの。全件を機械的に載せるのではなく、
-  実際にアクセス可能か(HTTP 200)・内容が対外的に見せるに値するかを確認した上で選定する
-  (詳細は[CLAUDE.md](CLAUDE.md)参照)。
-- 更新はおおむね週1回程度を想定。claude-mct(hfuさんのClaude Codeフリートの一員)が
-  定期的に見直しを担当する。
+- 掲載リストは`data/outputs.json`(掲載する、一言つき)と`data/excluded.json`(見送る、理由つき)
+  に分けて管理する。`docs/index.md`はこの2ファイルから`scripts/build.mjs`が自動生成する
+  (直接編集しない)。
+- **週1回、GitHub Actions(`.github/workflows/weekly-refresh.yml`)が自動実行**される:
+  1. `docs/index.md`を`data/outputs.json`から再生成し、変更があればcommit・push
+  2. dwg7組織でGitHub Pagesが新たに有効になったリポジトリのうち、`outputs.json`/`excluded.json`
+     どちらにも載っていないものを検出し、あれば掲載可否の判断を促すissueを1件だけ作成
+     (既に未解決のissueがあれば重複作成しない)
+- **人間(またはclaude-mct)が判断するのは、新規リポジトリの掲載可否だけ**。それ以外は自動化されている。
+  判断基準は[CLAUDE.md](CLAUDE.md)参照。
 
 ## 関連
 

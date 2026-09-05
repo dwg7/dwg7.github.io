@@ -1,0 +1,34 @@
+[
+  {
+    "repo": "sas0",
+    "blurb": "Situational Awareness as a Service Console, an Open MCT–based dashboard for public situational awareness (disaster-related)."
+  },
+  {
+    "repo": "kitavolca",
+    "blurb": "Hokkaido volcano hazard map pipeline (VBM + VLCM → PMTiles)."
+  },
+  {
+    "repo": "kumamoto-move",
+    "blurb": "Real-time GNSS (CORS, 1 Hz) for the 2026 Kumamoto earthquake."
+  },
+  {
+    "repo": "zukaku",
+    "blurb": "Print-ready field atlases generated directly from MapLibre + Martin, a modern take on Field Papers."
+  },
+  {
+    "repo": "vientiane-planning-map",
+    "blurb": "Zoning and base-map viewer for Vientiane, Laos, modeled on Sapporo's official urban planning map service."
+  },
+  {
+    "repo": "height-coverage",
+    "blurb": "An awareness site for OpenStreetMap building-height data coverage."
+  },
+  {
+    "repo": "plateau-mago-implicit",
+    "blurb": "Implicit 3D Tiles generated from Project PLATEAU data (Muroran, Sarabetsu)."
+  },
+  {
+    "repo": "ferspas57",
+    "blurb": "FAO / DWG5 collaboration site (STAC → martin catalog)."
+  }
+]

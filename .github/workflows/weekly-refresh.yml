@@ -1,0 +1,58 @@
+name: Weekly refresh
+
+on:
+  schedule:
+    # Mondays 03:00 UTC (~ noon JST)
+    - cron: '0 3 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build docs/index.md and detect undecided repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build.mjs
+
+      - name: Commit and push docs/index.md if changed
+        run: |
+          if git diff --quiet -- docs/index.md; then
+            echo "No content change."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/index.md
+            git commit -m "Weekly refresh of docs/index.md"
+            git push
+          fi
+
+      - name: Open an issue if undecided repos were found
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          count=$(jq 'length' .build-new-repos.json)
+          if [ "$count" -eq 0 ]; then
+            echo "Nothing to flag."
+            exit 0
+          fi
+          if gh issue list --search "Curation needed: new Pages-enabled repos in:title" --state open --json number --jq 'length' | grep -qv '^0$'; then
+            echo "An open curation issue already exists, not creating another."
+            exit 0
+          fi
+          body="The weekly refresh found repositories with GitHub Pages enabled that aren't yet listed in \`data/outputs.json\` or \`data/excluded.json\`:
+
+          $(jq -r '.[] | "- `" + .repo + "` (live: " + (.live | tostring) + ")"' .build-new-repos.json)
+
+          Add each one to \`data/outputs.json\` (with a one-line blurb) if it belongs on the public index, or to \`data/excluded.json\` (with a reason) if not. See \`CLAUDE.md\` for the selection criteria."
+          gh issue create --title "Curation needed: new Pages-enabled repos" --body "$body"

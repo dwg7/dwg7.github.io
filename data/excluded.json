@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "m3xx-fleet",
+    "reason": "Internal AI-agent fleet operations tooling, not a GIS output — off-topic for this audience."
+  },
+  {
+    "repo": "chukei",
+    "reason": "Explicitly staff-facing internal tool for a specific agency, not a general-audience showcase."
+  },
+  {
+    "repo": "metaken",
+    "reason": "Niche metadata research, thin external appeal compared to the selected outputs."
+  },
+  {
+    "repo": "spiccato",
+    "reason": "Infrastructure/technical demo, thin external appeal compared to the selected outputs."
+  },
+  {
+    "repo": "optrenew",
+    "reason": "Thin styling demo, thin external appeal compared to the selected outputs."
+  },
+  {
+    "repo": "dwg7.github.io",
+    "reason": "This is the index page itself, not a sub-project to list on it."
+  }
+]
