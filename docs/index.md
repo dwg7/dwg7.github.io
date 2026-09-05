@@ -4,7 +4,7 @@ title: DWG7 — UN Open GIS Initiative
 
 # DWG7
 
-DWG7 is a discussion working group of the [UN Open GIS Initiative](https://unopengis.org/).
+DWG7 is a domain working group of the [UN Open GIS Initiative](https://unopengis.org/).
 This page links to outputs currently published under `dwg7.github.io`.
 
 ## Selected outputs
