@@ -22,4 +22,4 @@ More projects are listed in the [dwg7 organization](https://github.com/dwg7).
 
 ---
 
-This list is refreshed periodically. Last updated: 2026-09-05.
+This list is refreshed periodically. Last updated: 2026-09-07.
