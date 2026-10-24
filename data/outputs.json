@@ -30,5 +30,21 @@
   {
     "repo": "ferspas57",
     "blurb": "FAO / DWG5 collaboration site (STAC → martin catalog)."
+  },
+  {
+    "repo": "nuye",
+    "blurb": "Reference-based map notes and task tracking for observations, routes, areas, and next actions."
+  },
+  {
+    "repo": "maplibre-gl-atlas",
+    "blurb": "Browser-native multi-sheet atlas printing for MapLibre-based mapping workflows."
+  },
+  {
+    "repo": "snow-hokkaido",
+    "blurb": "Daily, grid-based snow, cloud, and vegetation monitoring over Hokkaido with cloud-native geospatial layers."
+  },
+  {
+    "repo": "waterloo",
+    "blurb": "Testing OpenAerialMap PMTiles with drone imagery and Overture buildings in Waterloo, Sierra Leone."
   }
 ]
