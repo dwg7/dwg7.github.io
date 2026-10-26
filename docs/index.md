@@ -17,9 +17,13 @@ This page links to outputs currently published under `dwg7.github.io`.
 - **[height-coverage](height-coverage/)** — An awareness site for OpenStreetMap building-height data coverage.
 - **[plateau-mago-implicit](plateau-mago-implicit/)** — Implicit 3D Tiles generated from Project PLATEAU data (Muroran, Sarabetsu).
 - **[ferspas57](ferspas57/)** — FAO / DWG5 collaboration site (STAC → martin catalog).
+- **[nuye](nuye/)** — Reference-based map notes and task tracking for observations, routes, areas, and next actions.
+- **[maplibre-gl-atlas](maplibre-gl-atlas/)** — Browser-native multi-sheet atlas printing for MapLibre-based mapping workflows.
+- **[snow-hokkaido](snow-hokkaido/)** — Daily, grid-based snow, cloud, and vegetation monitoring over Hokkaido with cloud-native geospatial layers.
+- **[waterloo](waterloo/)** — Testing OpenAerialMap PMTiles with drone imagery and Overture buildings in Waterloo, Sierra Leone.
 
 More projects are listed in the [dwg7 organization](https://github.com/dwg7).
 
 ---
 
-This list is refreshed periodically. Last updated: 2026-10-19.
+This list is refreshed periodically. Last updated: 2026-10-26.
