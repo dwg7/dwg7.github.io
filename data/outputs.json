@@ -28,10 +28,6 @@
     "blurb": "Implicit 3D Tiles generated from Project PLATEAU data (Muroran, Sarabetsu)."
   },
   {
-    "repo": "ferspas57",
-    "blurb": "FAO / DWG5 collaboration site (STAC → martin catalog)."
-  },
-  {
     "repo": "nuye",
     "blurb": "Reference-based map notes and task tracking for observations, routes, areas, and next actions."
   },
@@ -46,5 +42,37 @@
   {
     "repo": "waterloo",
     "blurb": "Testing OpenAerialMap PMTiles with drone imagery and Overture buildings in Waterloo, Sierra Leone."
+  },
+  {
+    "repo": "dorayaki",
+    "blurb": "Experimental: Gaussian-splat surfels fitted from point clouds, carried in ordinary map tiles and rendered in MapLibre GL JS."
+  },
+  {
+    "repo": "cvalda",
+    "blurb": "Browser-only map viewer that fills gaps in GSI building data with Overture Maps buildings (Hokkaido)."
+  },
+  {
+    "repo": "do-survey",
+    "blurb": "Municipality-level dashboard of GSI public survey records in Hokkaido, built on Open MCT."
+  },
+  {
+    "repo": "plateau-juice",
+    "blurb": "Exploring PLATEAU building attributes for Sapporo, kept separate from geometry."
+  },
+  {
+    "repo": "doverture",
+    "blurb": "Exploratory conflation study comparing building footprints across data sources in Hokkaido."
+  },
+  {
+    "repo": "kikimimi",
+    "blurb": "Radio mentions of Mt. Tokachi as a social sensor, shown as live telemetry in Open MCT."
+  },
+  {
+    "repo": "rpi3-server-guide",
+    "blurb": "Hands-on guide to running GeoServer and MapServer on a Raspberry Pi 3."
+  },
+  {
+    "repo": "ferspas-html-demo",
+    "blurb": "FAO / DWG5 collaboration: a notebook analysis workflow published as an HTML web app."
   }
 ]
