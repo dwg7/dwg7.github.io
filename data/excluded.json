@@ -22,5 +22,37 @@
   {
     "repo": "dwg7.github.io",
     "reason": "This is the index page itself, not a sub-project to list on it."
+  },
+  {
+    "repo": "ferspas57",
+    "reason": "Repository archived; the FAO / DWG5 work continues as ferspas-html-demo."
+  },
+  {
+    "repo": "miso-geo",
+    "reason": "Pages is enabled but no site is published (404); a knowledge-method instance, not a public output."
+  },
+  {
+    "repo": "chigent",
+    "reason": "Pages returns 404; an agent prompt for a specific map service, not a published output."
+  },
+  {
+    "repo": "caketest",
+    "reason": "Early exploration (a test), explicitly unfinished."
+  },
+  {
+    "repo": "kcai-terrio",
+    "reason": "KCAI knowledge instance (method documentation), not a GIS output for this audience."
+  },
+  {
+    "repo": "guide",
+    "reason": "General guide pages for the group, not a project output."
+  },
+  {
+    "repo": "bvmap-koicha",
+    "reason": "Data build behind the bvmap styles served from stars; its Pages site is a preview, not a standalone output."
+  },
+  {
+    "repo": "geometry-source",
+    "reason": "Supporting source material without a public description; not a standalone output."
   }
 ]
